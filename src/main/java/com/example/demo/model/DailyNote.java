@@ -2,129 +2,129 @@ package com.example.demo.model;
 
 public class DailyNote {
 
-    private Long noteId;
-    private String noteTitle;
-    private String noteContents;
-    private String noteWriter;
-    private String attachYN;
-    private String attachPath;
-    private String editTime;
-    private String regTime;
-    private String commentYN;
-    private String commentContents;
-    private String commentTime;
+    private Long note_id;
+    private String note_title;
+    private String note_contents;
+    private String note_writer;
+    private String attach_yn;
+    private String attach_path;
+    private String edit_time;
+    private String reg_time;
+    private String comment_yn;
+    private String comment_contents;
+    private String comment_time;
 
-    public DailyNote(Long noteId
-            , String noteTitle
-            , String noteContents
-            , String noteWriter
-            , String attachYN
-            , String attachPath
-            , String editTime
-            , String regTime
-            , String commentYN
-            , String commentContents
-            , String commentTime) {
+    public DailyNote(Long note_id
+            , String note_title
+            , String note_contents
+            , String note_writer
+            , String attach_yn
+            , String attach_path
+            , String edit_time
+            , String reg_time
+            , String comment_yn
+            , String comment_contents
+            , String comment_time) {
         super();
-        this.noteId = noteId;
-        this.noteTitle = noteTitle;
-        this.noteContents = noteContents;
-        this.noteWriter = noteWriter;
-        this.attachYN = attachYN;
-        this.attachPath = attachPath;
-        this.editTime = editTime;
-        this.regTime = regTime;
-        this.commentYN = commentYN;
-        this.commentContents = commentContents;
-        this.commentTime = commentTime;
+        this.note_id = note_id;
+        this.note_title = note_title;
+        this.note_contents = note_contents;
+        this.note_writer = note_writer;
+        this.attach_yn = attach_yn;
+        this.attach_path = attach_path;
+        this.edit_time = edit_time;
+        this.reg_time = reg_time;
+        this.comment_yn = comment_yn;
+        this.comment_contents = comment_contents;
+        this.comment_time = comment_time;
     }
 
-    public Long getNoteId() {
-        return noteId;
+    public Long getNote_id() {
+        return note_id;
     }
 
-    public void setNoteId(Long noteId) {
-        this.noteId = noteId;
+    public void setNote_id(Long note_id) {
+        this.note_id = note_id;
     }
 
-    public String getNoteTitle() {
-        return noteTitle;
+    public String getNote_title() {
+        return note_title;
     }
 
-    public void setNoteTitle(String noteTitle) {
-        this.noteTitle = noteTitle;
+    public void setNote_title(String note_title) {
+        this.note_title = note_title;
     }
 
-    public String getNoteContents() {
-        return noteContents;
+    public String getNote_contents() {
+        return note_contents;
     }
 
-    public void setNoteContents(String noteContents) {
-        this.noteContents = noteContents;
+    public void setNote_contents(String note_contents) {
+        this.note_contents = note_contents;
     }
 
-    public String getNoteWriter() {
-        return noteWriter;
+    public String getNote_writer() {
+        return note_writer;
     }
 
-    public void setNoteWriter(String noteWriter) {
-        this.noteWriter = noteWriter;
+    public void setNote_writer(String note_writer) {
+        this.note_writer = note_writer;
     }
 
-    public String getAttachYN() {
-        return attachYN;
+    public String getAttach_yn() {
+        return attach_yn;
     }
 
-    public void setAttachYN(String attachYN) {
-        this.attachYN = attachYN;
+    public void setAttach_yn(String attach_yn) {
+        this.attach_yn = attach_yn;
     }
 
-    public String getAttachPath() {
-        return attachPath;
+    public String getAttach_path() {
+        return attach_path;
     }
 
-    public void setAttachPath(String attachPath) {
-        this.attachPath = attachPath;
+    public void setAttach_path(String attach_path) {
+        this.attach_path = attach_path;
     }
 
-    public String getEditTime() {
-        return editTime;
+    public String getEdit_time() {
+        return edit_time;
     }
 
-    public void setEditTime(String editTime) {
-        this.editTime = editTime;
+    public void setEdit_time(String edit_time) {
+        this.edit_time = edit_time;
     }
 
-    public String getRegTime() {
-        return regTime;
+    public String getReg_time() {
+        return reg_time;
     }
 
-    public void setRegTime(String regTime) {
-        this.regTime = regTime;
+    public void setReg_time(String reg_time) {
+        this.reg_time = reg_time;
     }
 
-    public String getCommentYN() {
-        return commentYN;
+    public String getComment_yn() {
+        return comment_yn;
     }
 
-    public void setCommentYN(String commentYN) {
-        this.commentYN = commentYN;
+    public void setComment_yn(String comment_yn) {
+        this.comment_yn = comment_yn;
     }
 
-    public String getCommentContents() {
-        return commentContents;
+    public String getComment_contents() {
+        return comment_contents;
     }
 
-    public void setCommentContents(String commentContents) {
-        this.commentContents = commentContents;
+    public void setComment_contents(String comment_contents) {
+        this.comment_contents = comment_contents;
     }
 
-    public String getCommentTime() {
-        return commentTime;
+    public String getComment_time() {
+        return comment_time;
     }
 
-    public void setCommentTime(String commentTime) {
-        this.commentTime = commentTime;
+    public void setComment_time(String comment_time) {
+        this.comment_time = comment_time;
     }
 
 

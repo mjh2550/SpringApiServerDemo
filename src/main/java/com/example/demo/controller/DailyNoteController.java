@@ -15,35 +15,34 @@ public class DailyNoteController {
         this.mapper = mapper;
     }
 
-    @GetMapping("/dailyNote/{noteId}")
-    public DailyNote getDailyNote(@PathVariable("noteId") String noteId) {
-        return mapper.getDailyNote(noteId);
+    @GetMapping("/dailyNote/{note_id}")
+    public DailyNote getDailyNote(@PathVariable("note_id") String note_id) {
+        return mapper.getDailyNote(note_id);
     }
 
     @GetMapping("/dailyNote/all")
     public List<DailyNote> getDailyNoteList(){
         return mapper.getDailyNoteList();
     }
-
-    @PutMapping("/dailyNote/{noteId}")
-    public void putDailyNote(@PathVariable("noteId")String noteId,
-                             @RequestParam("noteTitle")String noteTitle,
-                             @RequestParam("noteContents")String noteContents,
-                             @RequestParam("noteWriter")String noteWriter,
-                             @RequestParam("regTime")String regTime){
-        mapper.insertDailyNoteWithIdTitleContentsWriter(noteId,noteTitle,noteContents,noteWriter,regTime);
+    @PutMapping("/dailyNote/{note_id}")
+    public void putDailyNote(@PathVariable("note_id")String note_id,
+                             @RequestParam("note_title")String note_title,
+                             @RequestParam("note_contents")String note_contents,
+                             @RequestParam("note_writer")String note_writer,
+                             @RequestParam("reg_time")String regTime){
+        mapper.insertDailyNoteWithIdTitleContentsWriter(note_id,note_title,note_contents,note_writer,regTime);
     }
 
-    @PostMapping("/dailyNote/{noteId}")
-    public void postDailyNote(@PathVariable("noteId") String noteId
-            , @RequestParam("noteTitle") String noteTitle
-            , @RequestParam("noteContents") String noteContents
-            , @RequestParam("editTime") String editTime){
-        mapper.updateDailyNote(noteId,noteTitle,noteContents,editTime);
+    @PostMapping("/dailyNote/{note_id}")
+    public void postDailyNote(@PathVariable("note_id") String note_id
+            , @RequestParam("note_title") String note_title
+            , @RequestParam("note_contents") String note_contents
+            , @RequestParam("edit_time") String edit_time){
+        mapper.updateDailyNote(note_id,note_title,note_contents,edit_time);
     }
 
-    @DeleteMapping("/dailyNote/{noteId}")
-    public void deleteDailyNote(@PathVariable("noteId")String noteId){
-        mapper.deleteDailyNote(noteId);
+    @DeleteMapping("/dailyNote/{note_id}")
+    public void deleteDailyNote(@PathVariable("note_id")String note_id){
+        mapper.deleteDailyNote(note_id);
     }
 }

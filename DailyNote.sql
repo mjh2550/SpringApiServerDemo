@@ -1,6 +1,6 @@
 use  DailyNote;
 CREATE TABLE noteTable (
-                           note_id varchar(200) primary key,
+                           note_id BIGINT primary key,
                            note_title varchar(500) ,
                            note_contents varchar(5000) ,
                            note_writer varchar(100) ,
@@ -13,11 +13,10 @@ CREATE TABLE noteTable (
                            comment_time varchar(50)
 );
 INSERT INTO noteTable values (
-                                 'test1','testTitle','testContents'
+                                 2,'testTitle','testContents'
                              ,'testWriter','Y','testPath/path','testeditTime'
                              ,'testregTime','N',null,null
                              );
-commit;
 
 SELECT *
 FROM noteTable;
